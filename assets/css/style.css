@@ -970,3 +970,41 @@ button:hover, .btn:hover {
   padding: 20px;
   border-radius: 10px;
 }
+body {
+  background-color: #1A120B !important;
+  color: #FFD700 !important;
+}
+
+a {
+  color: #FFCC00 !important;
+}
+a:hover {
+  color: #FFD700 !important;
+}
+
+nav, header, footer {
+  background-color: #33220D !important;
+  color: #FFD700 !important;
+  border-bottom: 1px solid #FFD700 !important;
+}
+
+button, .btn {
+  background-color: #FFD700 !important;
+  color: #1A120B !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  border-radius: 5px !important;
+  font-weight: bold !important;
+}
+
+button:hover, .btn:hover {
+  background-color: #FFCC00 !important;
+}
+
+.card, .box, .section {
+  background-color: #2C1A0C !important;
+  border: 1px solid #FFD700 !important;
+  color: #FFD700 !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+}
