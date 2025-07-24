@@ -20,10 +20,10 @@
    * colors
    */
 
-  --rich-black-fogra-39: hsl(252, 24%, 4%);
+  --rich-black-fogra-39: hsl(265, 75%, 10%);
   --spanish-gray: hsl(0, 0%, 56%);
-  --eerie-black-1: hsl(252, 11%, 9%);
-  --eerie-black-2: hsl(0, 0%, 13%);
+  --eerie-black-1: hsl(265, 60%, 15%);
+  --eerie-black-2: hsl(265, 50%, 20%);
   --raisin-black: hsl(249, 9%, 15%);
   --han-purple: hsl(250, 72%, 51%);
   --gainsboro: hsl(0, 0%, 88%);
