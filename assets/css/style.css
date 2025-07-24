@@ -906,3 +906,28 @@ h1, h2, h3, h4, h5, h6,
 .nav-menu a {
   color: #ff3ecf !important;
 }
+/* MENU texty – fix všetkého */
+.navbar-link,
+.mobile-nav-link,
+.header .nav-link,
+.menu-link,
+.nav-menu a,
+.nav-item a,
+.menu a {
+  color: #ff3ecf !important;
+}
+
+/* MENU hamburger (tri čiarky) */
+.nav-toggle span,
+.menu-toggle span,
+.navbar-toggler-icon,
+.navbar-toggle-icon,
+.header .nav-toggle-icon {
+  background-color: #ff3ecf !important;
+  color: #ff3ecf !important;
+}
+
+/* Ak máš SVG ikonku menu */
+.nav-toggle svg path {
+  stroke: #ff3ecf !important;
+}
