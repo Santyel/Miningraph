@@ -1008,3 +1008,29 @@ button:hover, .btn:hover {
   padding: 20px !important;
   border-radius: 10px !important;
 }
+body {
+  background: linear-gradient(145deg, #FFD700, #FFC700, #FFB700, #FFD700);
+  color: #2B1900;
+}
+
+.card, .box, nav, header, footer {
+  background: linear-gradient(160deg, #FFF8C6, #FFD700, #C6A700);
+  border: 1px solid #FFFBE0;
+  box-shadow: 0 0 15px #FFD70088;
+  color: #2B1900;
+}
+
+a, h1, h2, h3, h4, h5, h6, p, span, button {
+  color: #2B1900 !important;
+  text-shadow: 0 0 5px #FFF8C6;
+}
+
+button, .btn {
+  background: linear-gradient(to bottom, #FFD700, #FFCC00);
+  color: #2B1900;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px #FFEA8A;
+}
