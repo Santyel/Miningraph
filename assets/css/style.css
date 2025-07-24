@@ -886,3 +886,6 @@ header,
   text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff;
   font-weight: bold;
 }
+h1, h2, h3, .section-title, .hero-title {
+  color: #ff3ecf !important; /* neonovo ružová + !important prepíše ostatné */
+}
