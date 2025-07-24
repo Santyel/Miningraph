@@ -898,3 +898,11 @@ h1, h2, h3, h4, h5, h6,
 .text-white {
   color: #ff3ecf !important;
 }
+/* MENU texty */
+.navbar-link,
+.mobile-nav-link,
+.header .nav-link,
+.menu-link,
+.nav-menu a {
+  color: #ff3ecf !important;
+}
