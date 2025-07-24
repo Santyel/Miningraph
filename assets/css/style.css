@@ -931,3 +931,42 @@ h1, h2, h3, h4, h5, h6,
 .nav-toggle svg path {
   stroke: #ff3ecf !important;
 }
+/* --- ZLATÝ ŠTÝL STRÁNKY --- */
+body {
+  background-color: #1A120B; /* veľmi tmavá hnedozlatá (Vault základ) */
+  color: #FFD700; /* zlatá farba textu */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: #FFCC00;
+}
+a:hover {
+  color: #FFD700;
+}
+
+nav, header, footer {
+  background-color: #33220D; /* tmavý zlatohnedý pre menu */
+  color: #FFD700;
+  border-bottom: 1px solid #FFD700;
+}
+
+button, .btn {
+  background-color: #FFD700;
+  color: #1A120B;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+button:hover, .btn:hover {
+  background-color: #FFCC00;
+}
+
+.card, .box, .section {
+  background-color: #2C1A0C; /* tmavšia zlatá pre boxy */
+  border: 1px solid #FFD700;
+  color: #FFD700;
+  padding: 20px;
+  border-radius: 10px;
+}
