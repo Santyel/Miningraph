@@ -889,3 +889,12 @@ header,
 h1, h2, h3, .section-title, .hero-title {
   color: #ff3ecf !important; /* neonovo ružová + !important prepíše ostatné */
 }
+/* Tvrdo prepíš všetky nadpisy */
+h1, h2, h3, h4, h5, h6,
+.hero-title,
+.section-title,
+.banner-title,
+.title-lg,
+.text-white {
+  color: #ff3ecf !important;
+}
