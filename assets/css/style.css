@@ -1034,3 +1034,43 @@ button, .btn {
   padding: 10px 20px;
   box-shadow: 0 0 10px #FFEA8A;
 }
+body {
+  background: url('https://i.imgur.com/KbT5t35.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #2B1900;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Vnútorné bloky so zlatým nádychom */
+header, nav, footer, section, .card, .menu, .menu-list {
+  background-color: rgba(255, 220, 100, 0.8) !important;
+  border: 1px solid #b8860b !important;
+  box-shadow: 0 0 15px rgba(184, 134, 11, 0.6);
+}
+
+/* Tlačidlá */
+button, .btn, .place-bid {
+  background: linear-gradient(to right, #FFD700, #B8860B) !important;
+  border: 1px solid #DAA520 !important;
+  color: #2B1900 !important;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
+
+/* Texty */
+h1, h2, h3, h4, h5, h6, p, a, li, span, strong {
+  color: #2B1900 !important;
+}
+
+/* Menu texty */
+.menu-list li a {
+  color: #2B1900 !important;
+  font-weight: bold;
+}
+
+/* Rámčeky */
+.card, .nft-box, .nft-card {
+  border-radius: 12px;
+  border: 2px solid #FFD700 !important;
+  background: rgba(255, 220, 100, 0.85);
+}
