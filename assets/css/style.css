@@ -873,3 +873,11 @@ body {
   .instruction { padding-block-end: 120px; }
 
 }
+body,
+section,
+header,
+.hero,
+.banner,
+.section-hero {
+  background-color: hsl(265, 75%, 10%) !important;
+}
