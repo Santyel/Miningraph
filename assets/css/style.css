@@ -1105,3 +1105,54 @@ h1, h2, h3, h4, h5, h6, p, a, li, span, strong {
     fill: #fff8e1 !important;
   }
 </style>
+/* GOLD VAULT BACKGROUND */
+body {
+  background-image: url('assets/images/gold-vault.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f5f5f5 !important;
+}
+
+/* HEADER (vrchný panel) */
+header, nav {
+  background-color: transparent !important;
+  background-image: url('assets/images/gold-vault.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* TEXTY – farba písma */
+h1, h2, h3, h4, h5, h6,
+p, a, span, strong, label {
+  color: #fff8d6 !important; /* jemná zlatistá */
+}
+
+/* TLAČIDLÁ */
+button, .btn, .button {
+  background-color: #d4af37 !important; /* luxusná zlatá */
+  color: black !important;
+  border: 1px solid #a9822a;
+  border-radius: 6px;
+}
+
+/* KARTIČKY A BOXY */
+.card, .box, .container, .section {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* ODDIELENIA (čiarky a border lines) */
+hr, .divider, .line {
+  border-color: #a9822a !important;
+}
+
+/* MENU HAMBURGER A IKONY */
+.menu-toggle svg,
+.icon, .wallet-icon {
+  fill: #f5f5f5 !important;
+  color: #f5f5f5 !important;
+}
