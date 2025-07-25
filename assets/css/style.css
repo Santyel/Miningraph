@@ -1005,4 +1005,38 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+/* Nastaví zlaté pozadie stránky */
+body {
+  background-color: #ce9806 !important;
+}
 
+/* Skryje obrázky, ktoré sa nezobrazili (placeholdery) */
+img[src=""], 
+img[src^="data:image/gif"], 
+img[src*="placeholder"], 
+img[src*="broken"], 
+img:not([src]) {
+  display: none !important;
+}
+
+/* Skryje všetky nadpisy pod obrázkami */
+.card-title,
+.product-title,
+.collection-title,
+h5.title,
+h4.title,
+h6.title {
+  display: none !important;
+}
+
+/* Skryje mená autorov a ceny */
+.owner,
+.bid,
+.price,
+.eth-price,
+.bnb-price,
+span,
+small,
+p {
+  display: none !important;
+}
