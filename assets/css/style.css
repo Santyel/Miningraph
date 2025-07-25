@@ -979,8 +979,9 @@ p, span, a, li, label {
   color: #000 !important;
   text-shadow: none !important;
 }
+
 body {
-  background-image: url("../assets/images/gold-vault.jpg");
+  background-image: url("../images/gold-vault.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
