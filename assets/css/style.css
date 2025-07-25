@@ -996,3 +996,10 @@ body {
   background-attachment: fixed;
   background-color: black;
 }
+body {
+  background-image: url("https://i.imgur.com/hmRYB4m.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
