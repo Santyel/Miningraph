@@ -991,3 +991,48 @@ header,
   background-repeat: no-repeat !important;
   background-position: center !important;
 }
+/* GOLD VAULT BACKGROUND */
+body {
+  background-image: url("../assets/images/gold-vault.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff !important;
+}
+
+/* Transparentné pozadie elementov */
+.section, .hero, .header, .footer, .card, .container, .navbar, .banner {
+  background-color: rgba(0, 0, 0, 0.5) !important; /* jemne priesvitné čierne pozadie */
+  border-radius: 12px;
+}
+
+/* ZLATÉ OKRAJE */
+.card, .button, .navbar, .footer, .container {
+  border: 1px solid gold !important;
+  box-shadow: 0 0 10px gold !important;
+}
+
+/* TLAČIDLÁ – zlatý štýl */
+.button, button, .btn, .cta {
+  background: linear-gradient(135deg, #FFD700, #FFA500) !important;
+  color: black !important;
+  border: none !important;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Texty v zlatej a ružovej */
+h1, h2, h3, h4, h5, h6, .headline, .title {
+  color: gold !important;
+}
+
+p, span, li, a, .text {
+  color: #ffeaa7 !important;
+}
+
+/* Fix pre čitateľnosť textov na zlatom pozadí */
+.section, .hero, .container {
+  backdrop-filter: blur(2px);
+}
