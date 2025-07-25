@@ -979,27 +979,15 @@ p, span, a, li, label {
   color: #000 !important;
   text-shadow: none !important;
 }
+body {
+  background: linear-gradient(135deg, #f3cc30, #d6a600, #f1c232, #ffcc00, #bf953f, #f7e98e) !important;
+  background-size: 600% 600% !important;
+  animation: goldShine 20s ease infinite !important;
+  color: white !important;
+}
 
-body {
-  background-image: url("../images/gold-vault.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-color: black;
-}
-body {
-  background-image: url("https://raw.githubusercontent.com/Santyel/Miningraph/main/assets/images/gold-vault.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-color: black;
-}
-body {
-  background-image: url("https://i.imgur.com/hmRYB4m.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+@keyframes goldShine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
