@@ -988,3 +988,11 @@ body {
   background-attachment: fixed;
   background-color: black;
 }
+body {
+  background-image: url("https://raw.githubusercontent.com/Santyel/Miningraph/main/assets/images/gold-vault.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: black;
+}
