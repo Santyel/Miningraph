@@ -991,3 +991,15 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+body {
+  background: linear-gradient(145deg, #4b3e26, #e8c547, #cfae17, #fff1a3, #cfae17, #e8c547, #4b3e26) !important;
+  background-size: 400% 400% !important;
+  animation: metallicGoldMove 15s ease infinite !important;
+  color: white !important;
+}
+
+@keyframes metallicGoldMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
