@@ -931,145 +931,51 @@ h1, h2, h3, h4, h5, h6,
 .nav-toggle svg path {
   stroke: #ff3ecf !important;
 }
-/* --- ZLATÝ ŠTÝL STRÁNKY --- */
+/* Nastavenie zlatého pozadia cez obrázok */
 body {
-  background-color: #1A120B; /* veľmi tmavá hnedozlatá (Vault základ) */
-  color: #FFD700; /* zlatá farba textu */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-a {
-  color: #FFCC00;
-}
-a:hover {
-  color: #FFD700;
-}
-
-nav, header, footer {
-  background-color: #33220D; /* tmavý zlatohnedý pre menu */
-  color: #FFD700;
-  border-bottom: 1px solid #FFD700;
-}
-
-button, .btn {
-  background-color: #FFD700;
-  color: #1A120B;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-}
-button:hover, .btn:hover {
-  background-color: #FFCC00;
-}
-
-.card, .box, .section {
-  background-color: #2C1A0C; /* tmavšia zlatá pre boxy */
-  border: 1px solid #FFD700;
-  color: #FFD700;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-
-body {
-  background-image: url('./assets/images/gold-vault.jpg') !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-attachment: fixed !important;
-  background-color: #000 !important;
-}
-header,
-.navbar,
-.site-header,
-.header,
-.header .container {
-  background-color: transparent !important;
-  background-image: url('./assets/images/gold-vault.jpg') !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-}
-/* GOLD VAULT BACKGROUND */
-body {
-  background-image: url("../assets/images/gold-vault.jpg");
+  background-image: url("assets/images/gold-vault.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  color: #fff !important;
+  background-color: black; /* fallback ak sa obrázok nenačíta */
 }
 
-/* Transparentné pozadie elementov */
-.section, .hero, .header, .footer, .card, .container, .navbar, .banner {
-  background-color: rgba(0, 0, 0, 0.5) !important; /* jemne priesvitné čierne pozadie */
-  border-radius: 12px;
-}
-
-/* ZLATÉ OKRAJE */
-.card, .button, .navbar, .footer, .container {
-  border: 1px solid gold !important;
-  box-shadow: 0 0 10px gold !important;
-}
-
-/* TLAČIDLÁ – zlatý štýl */
-.button, button, .btn, .cta {
-  background: linear-gradient(135deg, #FFD700, #FFA500) !important;
-  color: black !important;
+/* Odstránenie bordrov, tieňov, okrajov, ktoré rušia vzhľad */
+* {
+  box-shadow: none !important;
   border: none !important;
-  border-radius: 8px;
-  font-weight: bold;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  outline: none !important;
 }
 
-/* Texty v zlatej a ružovej */
-h1, h2, h3, h4, h5, h6, .headline, .title {
-  color: gold !important;
+/* Odstránenie farebných boxov */
+section,
+header,
+footer,
+main,
+div,
+article,
+aside {
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
-p, span, li, a, .text {
-  color: #ffeaa7 !important;
-}
-
-/* Fix pre čitateľnosť textov na zlatom pozadí */
-.section, .hero, .container {
-  backdrop-filter: blur(2px);
-}
-/* GOLD VAULT BACKGROUND FIX */
-body {
-  background: url("/assets/images/gold-vault.jpg") no-repeat center center fixed !important;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-  color: #fff !important;
-}
-
-/* Jemné tmavé podklady pod obsah */
-.section, .hero, .header, .footer, .container {
-  background-color: rgba(0, 0, 0, 0.65) !important;
-  border-radius: 12px !important;
-}
-
-/* Orámovanie zlatou */
-.card, .button, .navbar, .footer, .container {
-  border: 1px solid gold !important;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6) !important;
-}
-
-/* Tlačidlá zlaté */
-.button, button, .btn {
-  background: linear-gradient(135deg, #FFD700, #FFA500) !important;
+/* Tlačidlá - zlatý efekt */
+button,
+.btn,
+a.btn,
+input[type="button"],
+input[type="submit"] {
+  background-color: gold !important;
   color: black !important;
-  font-weight: bold !important;
-  border-radius: 8px !important;
+  border-radius: 8px;
+  box-shadow: none !important;
+  border: none !important;
 }
 
-/* Zlaté nadpisy */
-h1, h2, h3, h4, h5, h6 {
-  color: gold !important;
-}
-
-/* Jemne žltý text */
-p, span, li, a {
-  color: #ffeaa7 !important;
+/* Texty prehľadné na zlatom pozadí */
+h1, h2, h3, h4, h5, h6,
+p, span, a, li, label {
+  color: #000 !important;
+  text-shadow: none !important;
 }
