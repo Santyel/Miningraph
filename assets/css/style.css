@@ -1164,3 +1164,22 @@ body {
   background-attachment: fixed;
   background-color: #000000; /* fallback pre staršie prehliadače */
 }
+body {
+  background-image: url('./assets/images/gold-vault.jpg') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  background-color: #000 !important;
+}
+header,
+.navbar,
+.site-header,
+.header,
+.header .container {
+  background-color: transparent !important;
+  background-image: url('./assets/images/gold-vault.jpg') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
