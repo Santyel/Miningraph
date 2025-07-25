@@ -1036,3 +1036,40 @@ p, span, li, a, .text {
 .section, .hero, .container {
   backdrop-filter: blur(2px);
 }
+/* GOLD VAULT BACKGROUND FIX */
+body {
+  background: url("/assets/images/gold-vault.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  color: #fff !important;
+}
+
+/* Jemné tmavé podklady pod obsah */
+.section, .hero, .header, .footer, .container {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+  border-radius: 12px !important;
+}
+
+/* Orámovanie zlatou */
+.card, .button, .navbar, .footer, .container {
+  border: 1px solid gold !important;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6) !important;
+}
+
+/* Tlačidlá zlaté */
+.button, button, .btn {
+  background: linear-gradient(135deg, #FFD700, #FFA500) !important;
+  color: black !important;
+  font-weight: bold !important;
+  border-radius: 8px !important;
+}
+
+/* Zlaté nadpisy */
+h1, h2, h3, h4, h5, h6 {
+  color: gold !important;
+}
+
+/* Jemne žltý text */
+p, span, li, a {
+  color: #ffeaa7 !important;
+}
