@@ -985,21 +985,24 @@ body {
   animation: goldShine 20s ease infinite !important;
   color: white !important;
 }
-
-@keyframes goldShine {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
 body {
-  background: linear-gradient(145deg, #4b3e26, #e8c547, #cfae17, #fff1a3, #cfae17, #e8c547, #4b3e26) !important;
-  background-size: 400% 400% !important;
-  animation: metallicGoldMove 15s ease infinite !important;
-  color: white !important;
+  background: linear-gradient(
+    120deg,
+    #f5cc00 0%,
+    #ffdd44 20%,
+    #d4af37 40%,
+    #f6e27a 60%,
+    #ffdd44 80%,
+    #f5cc00 100%
+  );
+  background-size: 400% 400%;
+  animation: goldenGlow 10s ease-in-out infinite;
+  color: #000 !important;
 }
 
-@keyframes metallicGoldMove {
+@keyframes goldenGlow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
