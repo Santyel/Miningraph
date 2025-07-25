@@ -1040,3 +1040,38 @@ small,
 p {
   display: none !important;
 }
+/* Nastaví zlaté pozadie */
+body {
+  background-color: #ce9806 !important;
+}
+
+/* Skryje nefunkčné obrázky a celé ich obaly */
+img:not([src]), 
+img[src=""], 
+img[src*="placeholder"],
+img[src*="collection-"],
+img[src*="profile-"],
+img[src*="avatar-"],
+img[src$=".jpg"]:not([src^="http"]) {
+  display: none !important;
+}
+
+/* Skryje názvy a zbytočné detaily pod obrázkami */
+.card-title,
+.collection-title,
+.product-title,
+h4.title,
+h5.title,
+h6.title,
+p,
+span,
+small {
+  display: none !important;
+}
+
+/* Skryje ponuku Place a Bid, ak je bez obrázku */
+.place-bid,
+.bid-box,
+.card-footer {
+  display: none !important;
+}
