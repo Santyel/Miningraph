@@ -1156,3 +1156,11 @@ hr, .divider, .line {
   fill: #f5f5f5 !important;
   color: #f5f5f5 !important;
 }
+body {
+  background-image: url('./assets/images/gold-vault.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #000000; /* fallback pre staršie prehliadače */
+}
