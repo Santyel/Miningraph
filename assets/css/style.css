@@ -873,3 +873,11 @@ body {
   .instruction { padding-block-end: 120px; }
 
 }
+body {
+  background-image: url('./assets/images/gold-vault.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-color: #b68200; /* fallback ak by sa obrázok nenačítal */
+}
