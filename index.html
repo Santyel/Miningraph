@@ -1,106 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NFTC - Explore world's best NFT</title>
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jost:wght@600;900&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MININGRAPH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background-color: #b8860b; /* Zlatá farba */
+      font-family: 'Orbitron', sans-serif;
+      color: #ff00cc;
+      text-align: center;
+    }
+    header {
+      padding: 30px 10px 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    .yield {
+      font-size: 18px;
+      margin-top: 5px;
+    }
+    main {
+      padding: 50px 20px;
+    }
+    .connect-btn {
+      background-color: #ff00cc;
+      border: none;
+      padding: 14px 28px;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .wallet-address {
+      margin-top: 20px;
+      font-size: 14px;
+      color: white;
+      word-break: break-all;
+    }
+  </style>
 </head>
+<body>
 
-<body id="top">
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <div class="overlay" data-overlay></div>
-
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="68" height="48" alt="NFTC Logo">
-      </a>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          <p class="navbar-title">Menu</p>
-
-          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-            <ion-icon name="close-circle-outline"></ion-icon>
-          </button>
-        </div>
-
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#home" class="navbar-link" data-navlink>Home</a>
-          </li>
-
-          <li>
-            <a href="#explore" class="navbar-link" data-navlink>Explore</a>
-          </li>
-
-          <li>
-            <a href="#top-seller" class="navbar-link" data-navlink>Top Seller</a>
-          </li>
-
-          <li>
-            <a href="#collection" class="navbar-link" data-navlink>Collection</a>
-          </li>
-
-          <li>
-            <a href="#instruction" class="navbar-link" data-navlink>Instruction</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link" data-navlink>Contact</a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <button class="menu-open-btn" aria-label="Open Menu" data-nav-open-btn>
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
-
-      <a href="#" class="btn" aria-labelledby="wallet">
-        <ion-icon name="wallet-outline"></ion-icon>
-
-        <span id="wallet">Wallet Connect</span>
-      </a>
-
-    </div>
+  <header>
+    <h1>MININGRAPH</h1>
+    <p class="yield">Výťažnosť: <strong>0.00 MAIN/H</strong></p>
   </header>
 
-
-
-
-
   <main>
-    <article>
+    <h2>Discover, collect, and earn futuristic mining NFTs</h2>
+    <p style="color: white; font-size: 16px; max-width: 600px; margin: 20px auto;">
+      Pripoj svoju walletku, zakúp Mainera a začni zarábať Adamantine (MAIN).
+    </p>
+    <button class="connect-btn" onclick="connectWallet()">Pripojiť walletku</button>
+    <p class="wallet-address" id="walletAddress"></p>
+  </main>
+
+  <script>
+    async function connectWallet() {
+      if (window.ethereum) {
+        try {
+          const provider = new ethers.providers.Web3Provider(window.ethereum);
+          await provider.send("eth_requestAccounts", []);
+          const signer = provider.getSigner();
+          const address = await signer.getAddress();
+          document.getElementById("walletAddress").innerText = "Wallet: " + address;
+        } catch (err) {
+          console.error("Connection error:", err);
+          alert("Nepodarilo sa pripojiť walletku.");
+        }
+      } else {
+        alert("Metamask nie je dostupný. Prosím, nainštaluj si ho.");
+      }
+    }
+  </script>
+
+</body>
+</html>
 
       <!-- 
         - #HERO
