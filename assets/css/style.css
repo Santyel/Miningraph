@@ -951,3 +951,33 @@ div,
 main {
   background-color: transparent !important;
 }
+/* GOLD VAULT ŠTÝL */
+body {
+  background-color: #b18614 !important; /* Jednotná tmavšia zlatá */
+  color: #5519d2 !important; /* Fialové písmo */
+}
+
+* {
+  color: #5519d2 !important; /* Všetky texty fialové */
+  border-color: #5519d2 !important;
+}
+
+section,
+div,
+main,
+.container {
+  background-color: transparent !important;
+}
+
+/* Odstráni modré ? placeholdery obrázkov */
+img[src*="data:image/svg+xml"], 
+img[src*="default.png"], 
+img[src*="broken"], 
+img[src*="image-not-found"] {
+  display: none !important;
+}
+
+/* Fix pre texty a odkazy */
+a, h1, h2, h3, h4, h5, h6, p, span, label {
+  color: #5519d2 !important;
+}
