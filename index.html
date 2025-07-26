@@ -2,79 +2,46 @@
 <html lang="sk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Miningraph</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #b68200; /* zlatá */
-      color: #4b0082; /* fialová */
-    }
-
-    header {
-      display: flex;
-      justify-content: flex-end;
-      padding: 10px 20px;
-      gap: 10px;
-    }
-
-    .btn, .menu-btn {
-      background-color: transparent;
-      border: 2px solid #4b0082;
-      color: #4b0082;
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .btn:hover, .menu-btn:hover {
-      background-color: #4b0082;
-      color: white;
-    }
-
-    .main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 80vh;
-      text-align: center;
-      padding: 0 20px;
-    }
-
-    .main h1 {
-      margin-top: 0;
-      font-size: 26px;
-    }
-
-    .main p {
-      font-size: 18px;
-      margin: 8px 0;
-    }
-
-    .big-btn {
-      margin-top: 20px;
-      font-size: 18px;
-      padding: 10px 20px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miningraph Vault</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 </head>
 <body>
 
-  <header>
-    <button class="menu-btn">☰</button>
-    <button class="btn">Pripojiť wallet</button>
+  <header class="top-bar">
+    <div class="top-left">
+      <h1 class="logo-text">MININGRAPH</h1>
+    </div>
+    <div class="top-right">
+      <button class="menu-btn">☰</button>
+      <button id="connectWalletBtn">Pripojiť wallet</button>
+    </div>
   </header>
 
-  <div class="main">
-    <h1>MININGRAPH</h1>
-    <p>Výťažnosť: <strong>0.00 MAIN/H</strong></p>
-    <p>Pripoj svoju wallet, zakúp Mainera a<br>začni zarábať Adamantine (MAIN).</p>
-    <button class="btn big-btn">Pripojiť wallet</button>
-  </div>
+  <main class="main-content">
+    <section class="hero">
+      <p class="earn-rate">Výťažnosť: <strong>0.00 MAIN/H</strong></p>
+      <h2>Pripoj svoju wallet, zakúp Mainera a<br>začni zarábať Adamantine (MAIN).</h2>
+      <button class="main-btn">Pripojiť wallet</button>
+    </section>
+  </main>
+
+  <script>
+    // Wallet pripojenie
+    document.getElementById("connectWalletBtn").addEventListener("click", async () => {
+      if (typeof window.ethereum !== 'undefined') {
+        try {
+          const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+          document.getElementById("connectWalletBtn").innerText = accounts[0].slice(0, 6) + "..." + accounts[0].slice(-4);
+        } catch (error) {
+          alert("Wallet pripojenie zlyhalo.");
+        }
+      } else {
+        alert("Walletka (napr. MetaMask) nie je nainštalovaná.");
+      }
+    });
+  </script>
 
 </body>
 </html>
