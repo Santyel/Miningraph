@@ -940,138 +940,14 @@ body {
   background-attachment: fixed;
   background-color: black; /* fallback ak sa obrázok nenačíta */
 }
-
-/* Odstránenie bordrov, tieňov, okrajov, ktoré rušia vzhľad */
-* {
-  box-shadow: none !important;
-  border: none !important;
-  outline: none !important;
+body {
+  background-color: #b18614 !important; /* tmavšia metalická zlatá */
+  color: #000; /* text čierny, ak chceš iný – daj vedieť */
 }
 
-/* Odstránenie farebných boxov */
 section,
-header,
-footer,
-main,
 div,
-article,
-aside {
-  background: transparent !important;
+.container,
+main {
   background-color: transparent !important;
-}
-
-/* Tlačidlá - zlatý efekt */
-button,
-.btn,
-a.btn,
-input[type="button"],
-input[type="submit"] {
-  background-color: gold !important;
-  color: black !important;
-  border-radius: 8px;
-  box-shadow: none !important;
-  border: none !important;
-}
-
-/* Texty prehľadné na zlatom pozadí */
-h1, h2, h3, h4, h5, h6,
-p, span, a, li, label {
-  color: #000 !important;
-  text-shadow: none !important;
-}
-body {
-  background: linear-gradient(135deg, #f3cc30, #d6a600, #f1c232, #ffcc00, #bf953f, #f7e98e) !important;
-  background-size: 600% 600% !important;
-  animation: goldShine 20s ease infinite !important;
-  color: white !important;
-}
-body {
-  background: linear-gradient(
-    120deg,
-    #f5cc00 0%,
-    #ffdd44 20%,
-    #d4af37 40%,
-    #f6e27a 60%,
-    #ffdd44 80%,
-    #f5cc00 100%
-  );
-  background-size: 400% 400%;
-  animation: goldenGlow 10s ease-in-out infinite;
-  color: #000 !important;
-}
-
-@keyframes goldenGlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-/* Nastaví zlaté pozadie stránky */
-body {
-  background-color: #ce9806 !important;
-}
-
-/* Skryje obrázky, ktoré sa nezobrazili (placeholdery) */
-img[src=""], 
-img[src^="data:image/gif"], 
-img[src*="placeholder"], 
-img[src*="broken"], 
-img:not([src]) {
-  display: none !important;
-}
-
-/* Skryje všetky nadpisy pod obrázkami */
-.card-title,
-.product-title,
-.collection-title,
-h5.title,
-h4.title,
-h6.title {
-  display: none !important;
-}
-
-/* Skryje mená autorov a ceny */
-.owner,
-.bid,
-.price,
-.eth-price,
-.bnb-price,
-span,
-small,
-p {
-  display: none !important;
-}
-/* Nastaví zlaté pozadie */
-body {
-  background-color: #ce9806 !important;
-}
-
-/* Skryje nefunkčné obrázky a celé ich obaly */
-img:not([src]), 
-img[src=""], 
-img[src*="placeholder"],
-img[src*="collection-"],
-img[src*="profile-"],
-img[src*="avatar-"],
-img[src$=".jpg"]:not([src^="http"]) {
-  display: none !important;
-}
-
-/* Skryje názvy a zbytočné detaily pod obrázkami */
-.card-title,
-.collection-title,
-.product-title,
-h4.title,
-h5.title,
-h6.title,
-p,
-span,
-small {
-  display: none !important;
-}
-
-/* Skryje ponuku Place a Bid, ak je bez obrázku */
-.place-bid,
-.bid-box,
-.card-footer {
-  display: none !important;
 }
