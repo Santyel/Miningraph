@@ -292,8 +292,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--xiketic);
-  padding-block: 20px;
+  background-color: transparent; /* odstráni čierne pozadie */
+  padding-block: 0px;             /* voliteľne môžeš aj vypnúť padding */
   transition: var(--transition-1);
   z-index: 4;
 }
