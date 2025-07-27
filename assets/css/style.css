@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
+ * 
  */
 
 
@@ -320,7 +320,8 @@ body {
   width: 100%;
   max-width: 500px;
   height: 100%;
-  background-color: var(--rich-black-fogra-39);
+  background-color: transparent;
+box-shadow: none;
   visibility: hidden;
   z-index: 2;
   transition: 0.15s var(--cubic-in);
