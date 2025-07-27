@@ -889,3 +889,18 @@ body {
     transform: rotate(0deg) translateX(100%);
   }
 }
+/* Luxusné tmavé pozadie pre celé telo stránky */
+body {
+  background-color: #2e0d0c;
+  color: white; /* fallback farba pre bežný text */
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Melírovaný text */
+.gradient-text {
+  background: linear-gradient(90deg, #ffd700, #ff9c00, #ff5c78); /* žltá → oranžová → ružová */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
