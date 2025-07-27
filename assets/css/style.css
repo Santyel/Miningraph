@@ -904,3 +904,7 @@ body {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
+body {
+  background-color: #2d0b07; /* hlboká hnedá luxusná */
+  color: #fff0e5; /* pre bežný text (svetlá telová) */
+}
