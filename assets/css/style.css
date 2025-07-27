@@ -909,3 +909,6 @@ body {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
+.center-text {
+  text-align: center;
+}
