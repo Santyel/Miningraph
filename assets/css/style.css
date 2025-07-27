@@ -896,8 +896,10 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
-
 body {
-  background-color: #3d1512; /* luxusná bordovo-hnedá */
-  color: #fdd47a; /* voliteľne – text zlatý/oranžový */
+  background-color: #3d0d0d; /* Tmavá bordová */
+  color: #ffd966; /* Predvolená farba textu, môžeš zmeniť */
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
 }
