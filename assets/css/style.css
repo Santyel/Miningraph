@@ -897,14 +897,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Melírovaný text */
-.gradient-text {
-  background: linear-gradient(90deg, #ffd700, #ff9c00, #ff5c78); /* žltá → oranžová → ružová */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
 body {
-  background-color: #2d0b07; /* hlboká hnedá luxusná */
-  color: #fff0e5; /* pre bežný text (svetlá telová) */
+  background-color: #3d1512; /* luxusná bordovo-hnedá */
+  color: #fdd47a; /* voliteľne – text zlatý/oranžový */
 }
