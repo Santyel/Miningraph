@@ -921,7 +921,7 @@ html, body {
 .hero-welcome {
   width: 100vw;
   height: 100vh;
-  background-image: url('assets/images/Welcome-miningraph.jpeg');
+  background-image: url('assets/images/Welcome-miningraph.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
