@@ -939,3 +939,42 @@ body {
 .header .logo img {
   height: 40px;
 }
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.hero-welcome {
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.welcome-banner {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.header .logo img {
+  height: 48px;
+}
+
+.header .wallet-connect {
+  font-size: 16px;
+  padding: 6px 12px;
+}
