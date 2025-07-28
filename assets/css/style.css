@@ -910,7 +910,6 @@ body {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
-
 html, body {
   margin: 0;
   padding: 0;
@@ -922,19 +921,15 @@ html, body {
 .hero-welcome {
   width: 100vw;
   height: 100vh;
-  margin: 0;
-  padding: 0;
+  background-image: url('assets/images/Welcome-miningraph.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
 }
 
-.welcome-banner {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  display: block;
-}
 
 
