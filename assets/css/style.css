@@ -913,3 +913,29 @@ body {
 .center-text {
   text-align: center;
 }
+body {
+  overflow-x: hidden;
+}
+
+.welcome-banner {
+  width: 100vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.header .logo img {
+  height: 40px;
+}
