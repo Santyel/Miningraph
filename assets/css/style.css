@@ -908,32 +908,81 @@ body {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
-.welcome-bg {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
 }
 
-.welcome-bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.welcome-bg {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+.logo {
+  height: 40px;
 }
 
-.welcome-bg img {
+.menu-icon,
+.wallet-icon {
+  font-size: 24px;
+  color: white;
+  margin-left: 10px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-bg {
+  background-image: url('./assets/images/C3A451E2-23B1-4751-93BD-0166B8A40F93.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  display: block;
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hero-text span {
+  color: #f0f; /* ružový melír text */
+}
+
+.content {
+  background: black;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
 }
 
 
